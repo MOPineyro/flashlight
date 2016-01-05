@@ -63,16 +63,50 @@ else {
 exports.paths = [
    {
       path:  "users",
-      index: "firebase",
+      index: "winterhawks",
       type:  "user"
    },
    {
-      path:  "messages",
-      index: "firebase",
-      type:  "message",
-      fields: ['msg', 'name'],
+      path:  "userPoints",
+      index: "winterhawks",
+      type:  "userPoints",
       filter: function(data) { return data.name !== 'system'; }
-   }
+   },
+   {
+      path:  "userLevel",
+      index: "winterhawks",
+      type:  "userLevel"
+   },
+   {
+      path:  "userSpentPoints",
+      index: "winterhawks",
+      type:  "userSpentPoints"
+   },
+   {
+      path:  "userHistory",
+      index: "winterhawks",
+      type:  "userHistory"
+   },
+   {
+      path:  "userCurrentPickedPlayer",
+      index: "winterhawks",
+      type:  "userCurrentPickedPlayer"
+   },
+   {
+      path:  "userCheckedIn",
+      index: "winterhawks",
+      type:  "userCheckedIn"
+   },
+   {
+      path:  "userBadges",
+      index: "winterhawks",
+      type:  "userBadges"
+   },
+   {
+      path:  "uidToUsername",
+      index: "winterhawks",
+      type:  "uidToUsername"
+   },
 ];
 
 // Paths can also be stored in Firebase and loaded using FB_PATHS!
